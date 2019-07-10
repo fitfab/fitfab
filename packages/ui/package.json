@@ -1,0 +1,38 @@
+{
+  "name": "@fitfab/ui",
+  "version": "1.0.0",
+  "description": "fitfab UI elements",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "homepage": "https://github.com/fitfab/fitfab#readme",
+  "license": "MIT",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build": "yarn build:types && yarn build:js",
+    "prebuild": "rm -rf lib"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fitfab/fitfab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fitfab/fitfab/issues"
+  }
+}
