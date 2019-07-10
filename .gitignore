@@ -61,4 +61,4 @@ typings/
 .next
 
 # fitfab -- build files
-/lib
+lib/
