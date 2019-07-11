@@ -2,14 +2,18 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "demo",
+    "website"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "dev": "lerna run dev",
     "build": "lerna run build",
     "test": "lerna run test",
     "new:version": "lerna version --conventional-commits --yes",
-    "diff": "lerna diff"
+    "diff": "lerna diff",
+    "postinstall": "yarn bootstrap"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",

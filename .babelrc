@@ -13,8 +13,6 @@
         // Dead Code Elimination
         "pure": true
       }
-    ],
-    "@babel/proposal-class-properties",
-    "@babel/proposal-object-rest-spread"
+    ]
   ]
 }
