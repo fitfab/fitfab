@@ -4,12 +4,12 @@
   "workspaces": [
     "packages/*"
   ],
-  "engines": {
-    "node": "v10.16.0"
-  },
   "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna run build",
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "test": "lerna run test",
+    "new:version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -25,11 +25,6 @@
     "babel-plugin-styled-components": "^1.10.6",
     "lerna": "^3.15.0",
     "typescript": "^3.5.3"
-  },
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
   },
   "license": "MIT"
 }
