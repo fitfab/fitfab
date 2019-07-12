@@ -9,7 +9,8 @@
     "build": "lerna run build",
     "test": "lerna run test",
     "new:version": "lerna version --conventional-commits --yes",
-    "diff": "lerna diff"
+    "diff": "lerna diff",
+    "start": "lerna run start"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
