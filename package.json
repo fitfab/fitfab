@@ -10,7 +10,9 @@
     "test": "lerna run test",
     "new:version": "lerna version --conventional-commits --yes",
     "diff": "lerna diff",
-    "start": "lerna run start"
+    "start": "lerna run start",
+    "docz:dev": "lerna run docz:dev",
+    "docz:build": "lerna run docz:build"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
