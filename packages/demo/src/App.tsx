@@ -24,7 +24,9 @@ const scope = { styled, headerProps };
 const code = `
   // this a button
   const Btn = styled.button\`
-    color: palevioletred;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #000;
     font-size: 18px;
   \`
 
