@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export interface Props {
-  width: string;
+  width?: string;
 }
 
 export const Button = styled.button<Props>`
@@ -15,7 +15,7 @@ export const Button = styled.button<Props>`
   padding: 8px 24px;
   text-transform: uppercase;
   transition: all 0.5s;
-  width: ${({ width }) => (width ? width : "100px")};
+  width: ${({ width }) => (width ? width : "auto")};
 
   &:hover {
     background: #f33588;
