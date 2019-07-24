@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -24,7 +24,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/styled-components": "^4.1.17",
     "babel-plugin-styled-components": "^1.10.6",
-    "lerna": "^3.15.0",
+    "lerna": "^3.16.4",
     "typescript": "^3.5.3"
   },
   "license": "MIT",
