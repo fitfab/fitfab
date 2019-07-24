@@ -8,7 +8,8 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "build": "lerna run build",
     "test": "lerna run test",
-    "new:version": "lerna version --conventional-commits --yes",
+    "version": "lerna version --conventional-commits --yes",
+    "publish": "lerna publish",
     "diff": "lerna diff"
   },
   "devDependencies": {
@@ -26,5 +27,6 @@
     "lerna": "^3.15.0",
     "typescript": "^3.5.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "version": "0.0.1"
 }
